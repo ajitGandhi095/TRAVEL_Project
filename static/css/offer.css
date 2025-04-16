@@ -102,8 +102,11 @@ p {
 .form-container button {
     width: 320px;
 }
-#e_offer{
-    margin-bottom: -1.2em;
+#offer_left1 {
+    font-size: 17px;
+}
+#cleaning_para {
+    margin-top: 4em;
 }
 #ex_offer{
     margin-top: -0.8em;
