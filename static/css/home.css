@@ -1,0 +1,372 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+#hero {   
+    height: 610px;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), 
+              url('../images/travel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 15s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:ease;
+    animation-delay: 5s;
+    
+}
+@keyframes animate {
+    0% {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), 
+              url('../images/travel.jpg');
+    }
+    20% {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), 
+              url('../images/taj1.jpg');
+    }
+    40% {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), 
+              url('../images/hyd1.jpg');
+    }
+    60% {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), 
+              url('../images/darjeeling1.jpg');
+    }
+    80% {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), 
+              url('../images/delhi1.jpg');
+    }
+    100% {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), 
+              url('../images/jaipur1.jpg');
+    }
+}
+#navdiv{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    /* font-size: 22px; */
+    padding: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+}
+#navbar a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px 2px rgb(96, 96, 96);
+    font-size: 22px;
+}
+#title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+#account{
+    margin-right: 20px;
+}
+#account button{
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+#section2 main{
+    margin-top: 16%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left: 40%;
+    font-family: 'Segoe UI';
+}
+#headbutton {
+    width: 150px;
+    padding: 7px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font: 15px;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+#subhead1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(221, 199, 199);
+}
+#subhead2 {
+    color: rgb(221, 199, 199);
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: 4px;
+}
+/* #section2_head1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: linear-gradient(rgba(192, 88, 88, 0.2), rgba(236, 185, 56, 0.1));
+    text-shadow: 1px 1px 2px rgb(96, 96, 96);
+    position: relative;
+    height: 140px;
+}
+#section2_head {
+    margin-top: -20px;
+}
+#section2_div1 {
+    margin-left: 12%;
+    position: absolute;
+    margin-top: -25px;
+}
+#card_1 {
+    background-color: rgb(212, 242, 234);
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 4%;
+    padding: 10px;
+}
+#card1_div1 {
+    text-align: center;
+    margin-top: 10px;
+}
+#card_2 {
+    background-color: rgb(212, 242, 234);
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 4%;
+    padding: 10px;
+}
+#card_3 {
+    background-color: rgb(212, 242, 234);
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 4%;
+    padding: 10px;
+}
+#card_4 {
+    background-color: rgb(212, 242, 234);
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    padding: 10px;
+}
+.card_head {
+    margin-top: 15px;
+    text-align: center;
+    font-weight:bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.card-subhead {
+    font-size: 20px;
+    margin-top: -3px;
+}
+.card-subhead2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 17px;
+}
+#section3 {
+    display: flex;
+    margin-top: 230px;
+    background: linear-gradient(rgba(88, 192, 168, 0.2), rgba(236, 185, 56, 0.1));
+}
+#section3-img {
+    margin-top: 3em;
+    margin-left: 4rem;
+    margin-bottom: 3em;
+    border-radius: 20px;
+}
+#section3-sideimg {
+    display: flex;
+    flex-direction: column;
+}
+#section3-head {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Sabon Next LT';
+    color: rgb(126, 124, 124);
+    margin-top: 1.2em;
+}
+#section3-sideimg-para {
+    margin-left: 9em;
+    word-break:break-all;
+    text-align: justify;
+    margin-right: 5em;
+}
+#section3-sideimg-button {
+    margin-left: 9em;
+}
+#headbutton2 {
+    width: 180px;
+    padding: 7px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font: 15px;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+#section4-img{
+    display:flex;
+    flex-direction: column;
+    margin-top: 5em;
+    margin-left: 9em;
+    
+}
+.img-card img {
+    margin-right: 3em;
+    border-radius: 20px;
+    box-shadow: 5px 6px 10px rgba(34, 33, 33, 0.9);
+}
+.img-card {
+    display: flex
+}
+#img-card2 {
+    margin-top: 3%;
+    height: 400px;
+}
+.sec4-img {
+    position: relative;
+}
+.sec4-para{
+    position: absolute;
+    margin-top: -3em;
+    color: white;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 3em;
+}
+.agra {
+    margin-left: 2em;
+}
+#section5 {
+    background-color: rgb(246, 88, 31);
+    height: 505px;
+    display: flex;
+}
+#section5-card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4em;
+    position: relative;
+    color: white;
+    margin-top: 5em;
+}
+#section5-img {
+    position: absolute;
+    margin-top:-5em;
+    left: 60%;
+}
+#section5-head {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Bell MT';
+}
+#section5-head2 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Bell MT';
+    margin-top: -0.3em;
+}
+#section5-para {
+    width: 480px;
+}
+#section5-button {
+    margin-left: 9em;
+    font-size: 20px;
+}
+#section2-headbutton2 {
+    width: 180px;
+    padding: 7px;
+    background-color: white;
+    color: rgb(246, 88, 31);
+    border: none;
+    border-radius: 10px;
+    font: 15px;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-top: 1.8em;
+    margin-left: -8.8em;
+} */
+
+/* Footer section */
+
+/* footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+footer span {
+    display: block;
+    margin-top: 20px;
+}
+.footer-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer-title img {
+    background-color: white;
+    border-radius: 60px;
+}
+.footer_column {
+    margin-top: 3em;
+}
+#footer_column1 {
+    margin-left: 2em;
+}
+#footer_column2 {
+    margin-left: 4em;
+}
+#footer_column4 {
+    margin-left: 3em;
+}
+#footer-hr {
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-top: 3em;
+    width: 370%;
+    margin-left: 2em;
+}
+#footer-copyright {
+    display: flex;
+    flex-direction: column;
+}
+#copyright {
+    width: 370%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: -15px;
+    color: #616161;
+}  */

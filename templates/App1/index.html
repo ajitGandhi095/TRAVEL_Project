@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'node_modules/bootstrap-icons/font/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.css' %}">
+    
+</head>
+<body>
+    
+    <header>
+        <section id="hero">
+
+            <div id="navdiv">
+                <div id="title">
+                    <span>TravelPoint.</span>
+                </div>
+    
+                <div id="navbar">
+                    <nav>
+                        <a href="">Home</a>
+                        <a href="/about">About</a>
+                        <a href="/offers">Offers</a>
+                        <a href="/news">News</a>
+                        <a href="/contact">Contact</a>
+                    </nav>
+                </div>
+    
+                <div id="account">
+                    <a href="/signup"><button>Signup</button></a>
+                    <a href="/login"><button>Login</button></a>
+                </div>
+            </div>
+
+            <section id="section2">
+                <main>
+                    <span id="subhead1">Hawaii</span>
+                    <span id="subhead2">From $980</span>
+                    <a href="/login"><button id="headbutton">More info <span class="bi bi-chevron-right"></span></button></a>
+                </main>
+            </section>
+        </section>
+    </header>
+
+    <section>
+            <!-- Section heading-1 -->
+
+        <div id="section2_head1">
+            <span id="section2_head">Fantastic Holidays in</span>
+        </div>
+
+            <!-- Section heading-1 card-1 -->
+        <div class="d-flex" id="section2_div1">
+            <div id="card_1">
+                <div id="card1_div1">
+                    <img src="{% static 'images/guarantee.png' %}" alt="" width="50px" height="50px">
+                </div>
+                <div class="card_head">Best Price <div class="card-subhead">Guarantee</div></div>
+                <div class="card-subhead2">We are organise your holidays with in your affodable budget</div>
+            </div>
+
+            <div id="card_2">
+                <div id="card1_div1">
+                    <img src="{% static 'images/love.png' %}" alt="" width="50px" height="50px">
+                </div>
+                <div class="card_head">Travellers Love Us</div>
+                <div class="card-subhead2">Your travel goes enjoyfull and safely own by us</div>
+            </div>
+            <div id="card_3">
+                <div id="card1_div1">
+                    <img src="{% static 'images/user.png' %}" alt="" width="50px" height="50px">
+                </div>
+                <div class="card_head">Best Travel Agent</div>
+                <div class="card-subhead2">We are always provides best guide to enjoy your travel and behave like a friend</div>
+            </div>
+            <div id="card_4">
+                <div id="card1_div1">
+                    <img src="{% static 'images/customer-support.png' %}" alt="" width="50px" height="50px">
+                </div>
+                <div class="card_head">Our Dedicated <div class="card-subhead">Support</div></div>
+                <div class="card-subhead2">We are always touch with you during your journey</div>
+            </div>
+        </div>
+
+            <!-- Section3 heading-2 -->
+
+        <div id="section3">
+
+            <div id="section3-img">
+                <img src="{% static 'images/jaipur2.jpg' %}" alt="" width="450px" height="400px" style="border-radius: 30px;">
+            </div>
+
+            <div id="section3-sideimg">
+
+                <div id="section3-head">
+                    <div>Plan Your Destination</div>
+                    <div>&</div>
+                    <div>Journey with TravelPoint</div>
+                </div>
+
+                <div id="section3-sideimg-para">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime amet vero sit numquam sint quidem, dignissimos nobis ducimus iste at reprehenderit voluptatem blanditiis similique earum voluptatibus modi eveniet laborum sapiente consectetur incidunt quam adipisci aperiam? Eum qui odit inventore, pariatur blanditiis unde minima numquam amet nihil aut consequuntur.</p>
+                </div>
+
+                <div id="section3-sideimg-button">
+                    <a href="/login"><button id="headbutton2">Your Destination <span class="bi bi-chevron-right"></span></button></a>
+                </div>
+            </div>
+
+        </div>
+
+            <!-- Section-4 Image card -->
+            
+        <div id="section4-img">
+
+            <div class="img-card">
+
+                <div>
+                    <div class="sec4-img">
+                        <img src="{% static 'images/delhi1.jpg' %}" alt="" width="280px" height="310px">
+                    </div>
+                    <div class="sec4-para"><span>NEW DELHI</span></div>
+                </div>
+                <div>
+                    <div class="sec4-img">
+                        <img src="{% static 'images/taj1.jpg' %}" alt="" width="280px" height="310px">
+                    </div>
+                    <div class="sec4-para"><span class="agra">AGRA</span></div>
+                </div>
+                <div>
+                    <div class="sec4-img">
+                        <img src="{% static 'images/darjeeling1.jpg' %}" alt="" width="280px" height="310px">
+                    </div>
+                    <div class="sec4-para"><span>DARJEELING</span></div>
+                </div>
+
+            </div>
+            <div class="img-card" id="img-card2">
+
+                <div>
+                    <div class="sec4-img">
+                        <img src="{% static 'images/jaipur1.jpg' %}" alt="" width="280px" height="310px">
+                    </div>
+                    <div class="sec4-para" id><span class="agra">JAIPUR</span></div>
+                </div>
+                <div>
+                    <div class="sec4-img">
+                        <img src="{% static 'images/sikkim1.jpg' %}" alt="" width="280px" height="310px">
+                    </div>
+                    <div class="sec4-para"><span class="agra">SIKKIM</span></div>
+                </div>
+                <div>
+                    <div class="sec4-img">
+                        <img src="{% static 'images/hyd1.jpg' %}" alt="" width="280px" height="310px">
+                    </div>
+                    <div class="sec4-para"><span>HYDERABAD</span></div>
+                </div>
+    
+            </div>
+
+        </div>
+
+            <!-- Section-5 card -->
+
+        <div id="section5">
+
+                    <div id="section5-card">
+                        <div id="section5-head">Ready to Start</div>
+                        <div id="section5-head2">Your Adventure?</div>
+                        <div id="section5-para">
+                            Let us help you createthe perfect journey. Our travel experts are ready to craft your dream vacation.
+                        </div>
+                        <div id="section5-button">
+                            <a href="/login"><button id="section2-headbutton2">Start Planning <span class="bi bi-arrow-right-circle"></span></button></a>
+                        </div>
+                    </div>
+    
+                <div id="section5-img">
+                    <img src="{% static 'images/image-12.png' %}" alt="" width="470px" height="585px">
+                </div>
+
+        </div>
+
+    </section>
+
+        <!-- Footer -->
+    <footer>
+
+        <div class="footer_column" id="footer_column1">
+            <span class="footer-title"><img src="{% static 'images/travelicon.png' %}" alt="" height="40px" width="40px"> ADVENTURE PLAN</span>
+            <span>Your trusted partner for extraordinary travel experience of few years</span>
+        </div>
+        <div class="footer_column" id="footer_column2">
+            <aside>
+                <span class="footer-title"> Quick Links</span>
+                <a href="/home" style="text-decoration: none; color: white;"><span> Home</span></a>
+                <a href="/about" style="text-decoration: none; color: white;"><span> About</span></a>
+                <a href="/offers" style="text-decoration: none; color: white;"><span> Offers</span></a>
+                <a href="/news" style="text-decoration: none; color: white;"><span> Package</span></a>
+                <a href="/contact" style="text-decoration: none; color: white;"><span> Contact</span></a>
+            </aside>
+        </div>
+        <div class="footer_column" id="footer_column3">
+            <span class="footer-title">Contact</span>
+            <span>Near Panjagutta, Ameerpet 500054</span>
+            <span class="bi bi-telephone">  +088 (246) 642-27-10</span>
+            <span class="bi bi-envelope"> example@gmail.com</span>
+        </div>
+        <div class="footer_column" id="footer_column4">
+            <span class="footer-title">Follow Us</span>
+            <span>Instagram</span>
+            <span>Twitter</span>
+            <span>LinkedIn</span>
+            <span>Facebook</span>
+        </div>
+
+        <div id="footer-copyright">
+            <div id="footer-hr"></div>
+            <div id="copyright">
+                <p>Copyright © 2025 Travel Agency</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

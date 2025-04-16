@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer Details</title>
+    <link rel="stylesheet" href="{% static 'css/offer.css' %}">
+</head>
+<body>
+    <section>
+        <div id="navdiv">
+            <div id="title">
+                <span>TravelPoint.</span>
+            </div>
+
+            <div id="navbar">
+                <nav>
+                    <a href="/home">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/offers">Offers</a>
+                    <a href="/news">News</a>
+                    <a href="/contact">Contact</a>
+                </nav>
+            </div>
+
+            <div id="account">
+                <a href="/signup"><button>Signup</button></a>
+                <a href="/login"><button>Login</button></a>
+            </div>
+        </div>
+        <div class="offer-container">
+            <div class="offer-text">
+                <h3 id="e_offer">Exclusive Offer</h3>
+                <h1 >Cleaning From &#8377; 4999</h1>
+                <h1 id="ex_offer">And Get 15 % Off</h1>
+                <p >Coupon Code Will Be Applied Automatically</p>
+            </div>
+            <div class="form-container">
+                <h2>Book This Form To Take This Offer</h2>
+                <form>
+                    <input type="email" placeholder="Enter email" required>
+                    <input type="text" placeholder="Cupon Code">
+                    <button type="submit" id="book">Book Now</button>
+                </form>
+                <p>By submitting, I agree to receive updates & exclusive offers from MyBusinessName. Consent can be withdrawn at any time.</p>
+                <p>For more details see <a href="#">Terms of Use</a>.</p>
+                <p>Coupon code will be applied automatically. Use of the offer requires you to sign up for a minimum of 1 or 3 months on a weekly, bi-weekly, or monthly cleaning plan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+
+        <div class="footer_column" id="footer_column1">
+            <span class="footer-title"><img src="{% static 'images/travelicon.png' %}" alt="" height="40px" width="40px"> ADVENTURE PLAN</span>
+            <span>Your trusted partner for extraordinary travel experience of few years</span>
+        </div>
+        <div class="footer_column" id="footer_column2">
+            <aside>
+                <span class="footer-title"> Quick Links</span>
+                <a href="/home" style="text-decoration: none; color: white;"><span> Home</span></a>
+                <a href="/about" style="text-decoration: none; color: white;"><span> About</span></a>
+                <a href="/offers" style="text-decoration: none; color: white;"><span> Offers</span></a>
+                <a href="/news" style="text-decoration: none; color: white;"><span> Package</span></a>
+                <a href="/contact" style="text-decoration: none; color: white;"><span> Contact</span></a>
+            </aside>
+        </div>
+        <div class="footer_column" id="footer_column3">
+            <span class="footer-title">Contact</span>
+            <span>Near Panjagutta, Ameerpet 500054</span>
+            <span class="bi bi-telephone">  +088 (246) 642-27-10</span>
+            <span class="bi bi-envelope"> example@gmail.com</span>
+        </div>
+        <div class="footer_column" id="footer_column4">
+            <span class="footer-title">Follow Us</span>
+            <span>Instagram</span>
+            <span>Twitter</span>
+            <span>LinkedIn</span>
+            <span>Facebook</span>
+        </div>
+
+        <div id="footer-copyright">
+            <div id="footer-hr"></div>
+            <div id="copyright">
+                <p>Copyright © 2025 Travel Agency</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+<body>
+
+    <section class="who-we-are">
+        <div id="navdiv">
+            <div id="title">
+                <span>TravelPoint.</span>
+            </div>
+
+            <div id="navbar">
+                <nav>
+                    <a href="/home">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/offers">Offers</a>
+                    <a href="/news">News</a>
+                    <a href="/contact">Contact</a>
+                </nav>
+            </div>
+
+            <div id="account">
+                <a href="/signup"><button>Signup</button></a>
+                <a href="/login"><button>Login</button></a>
+            </div>
+        </div>
+        <div>
+            <div id="head">About Travelpoint</div>
+            <p>Our mission is to inspire and enhance the public’s appreciation of India’s diverse landscapes, cultures, and heritage by sharing thoughtful travel guides, stories, and experiences from across the country.</p>
+        </div>
+        <div id="sec_head">Who We Are</div>
+        <div class="card-container">
+            <div class="card">
+                <div>
+                    <img src="{% static 'images/History.jpg' %}" alt="History of Travelpoint">
+                </div>
+                <div class="card1-head">History of Travelpoint</div>
+                <div class="card1-subhead">Discover the stories behind India’s most iconic destinations — their history, culture, and the people who bring them to life.</div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="{% static 'images/commitment.jpg'%}" alt="Our commitment to race equality">
+                </div>
+                <div class="card1-head">Our commitment to race equality</div>
+                <div class="card1-subhead">Our commitment is to promote inclusive and responsible travel across India, celebrating its diversity while supporting local communities and preserving cultural and natural heritage.</div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="{% static 'images/information.jpg'%}" alt="Access to Information" height="230px">
+                </div>
+                <div class="card1-head">Access to Information</div>
+                <div class="card1-subhead">Find out how we can help you explore and learn more about India’s travel destinations, culture, and history.</div>
+            </div>
+        </div>
+    </section>
+
+        <!-- section-2 -->
+    
+    <section id="section2">
+
+        <div id="section2-sideimg">
+            <div class="heading">Plan Your Holiday</div>
+            <div class="heading" id="heading2">Customize your perfect getaway</div>
+            <div id="para">
+            Find the best destinations, create your itinerary, and travel with ease — start planning your Indian adventure today!
+            </div>
+            <div id="section2-sideimg-button">
+                <a href="/login"><button id="headbutton2">Start Planning <span class="bi bi-chevron-right"></span></button></a>
+            </div>
+        </div>
+
+        <div id="section2-img">
+            
+            <img src="{% static 'images/simla.webp' %}" alt="" width="170px" height="170px" id="section2-img1">
+            
+            <img src="{% static 'images/kerala.cms' %}" alt="" width="170px" height="170px" id="section2-img2">
+            
+            <img src="{% static 'images/varanasi.jpg' %}" alt="" width="170px" height="170px" id="section2-img3">
+        
+            <img src="{% static 'images/beach.webp' %}" alt="" width="170px" height="170px" id="section2-img4">
+        
+        </div>
+        
+    </section>
+
+
+    <!-- section3 -->
+
+    <section id="section3">
+
+        <div id="section3-img">
+
+            <img src="{% static 'images/hotel1.jpg' %}" alt="" width="170px" height="170px" id="section3-img1">
+
+            <img src="{% static 'images/hotel2.jpg' %}" alt="" width="170px" height="170px" id="section3-img2">
+
+            <img src="{% static 'images/hotel3.jpeg' %}" alt="" width="170px" height="170px" id="section3-img3">
+
+            <img src="{% static 'images/hotel4.jpeg' %}" alt="" width="170px" height="170px" id="section3-img4">
+            
+        </div>
+
+        <div id="section3-sideimg">
+            <div class="s3-heading">Book Your Stay</div>
+            <div class="s3-heading" id="s3-heading">Find comfort wherever you go</div>
+            <div id="s3-para">
+                Explore top-rated hotels across India, from luxury resorts to cozy homestays — the perfect stay is just a click away!
+            </div>
+            <div id="section3-sideimg-button">
+                <a href="/login"><button id="headbutton3">Book Now <span class="bi bi-chevron-right"></span></button></a>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer -->
+
+
+    <footer>
+
+        <div class="footer_column" id="footer_column1">
+            <span class="footer-title"><img src="{% static 'images/travelicon.png' %}" alt="" height="40px" width="40px"> ADVENTURE PLAN</span>
+            <span>Your trusted partner for extraordinary travel experience of few years</span>
+        </div>
+        <div class="footer_column" id="footer_column2">
+            <aside>
+                <span class="footer-title"> Quick Links</span>
+                <a href="/home" style="text-decoration: none; color: white;"><span> Home</span></a>
+                <a href="/about" style="text-decoration: none; color: white;"><span> About</span></a>
+                <a href="/offers" style="text-decoration: none; color: white;"><span> Offers</span></a>
+                <a href="/news" style="text-decoration: none; color: white;"><span> Package</span></a>
+                <a href="/contact" style="text-decoration: none; color: white;"><span> Contact</span></a>
+            </aside>
+        </div>
+        <div class="footer_column" id="footer_column3">
+            <span class="footer-title">Contact</span>
+            <span>Near Panjagutta, Ameerpet 500054</span>
+            <span class="bi bi-telephone">  +088 (246) 642-27-10</span>
+            <span class="bi bi-envelope"> example@gmail.com</span>
+        </div>
+        <div class="footer_column" id="footer_column4">
+            <span class="footer-title">Follow Us</span>
+            <span>Instagram</span>
+            <span>Twitter</span>
+            <span>LinkedIn</span>
+            <span>Facebook</span>
+        </div>
+
+        <div id="footer-copyright">
+            <div id="footer-hr"></div>
+            <div id="copyright">
+                <p>Copyright © 2025 Travel Agency</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
