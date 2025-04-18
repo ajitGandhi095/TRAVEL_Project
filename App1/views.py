@@ -39,7 +39,7 @@ def contact(request):
     msg="Welcome to Travel Point"
     my_dict= {"msg":msg}
     
-    return render(request, 'App1/navbar.html', my_dict)
+    return render(request, 'App1/contact.html', my_dict)
 
 def homepage(request):
     return render(request, 'App1/home.html')
