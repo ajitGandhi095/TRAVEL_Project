@@ -17,6 +17,9 @@ def signup(request):
 
     return render(request, 'App1/signup.html', my_dict)
 
+def home1(request):
+    return render(request, 'App1/index.html')
+
 def about(request):
     msg="Welcome to Travel Point"
     my_dict= {"msg":msg}
@@ -29,11 +32,11 @@ def offers(request):
 
     return render(request, 'App1/offer.html', my_dict)
 
-def news(request):
+def package(request):
     msg="Welcome to Travel Point"
     my_dict= {"msg":msg}
 
-    return render(request, 'App1/navbar.html', my_dict)
+    return render(request, 'App1/package.html', my_dict)
 
 def contact(request):
     msg="Welcome to Travel Point"
