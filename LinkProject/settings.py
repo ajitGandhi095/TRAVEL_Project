@@ -71,6 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'LinkProject.wsgi.application'
+LOGIN_REDIRECT_URL = '/homepage'
 
 
 # Database

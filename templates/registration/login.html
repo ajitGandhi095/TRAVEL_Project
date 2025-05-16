@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    {% extends 'App1/signuplogin.html' %}
+    {% block body_block %}
+    <div id="container">
+
+        <div class="login">
+            <h1>Plz Login To Explore Our Package</h1>
+            <form method="post">
+                {{form.as_p}}
+                {% csrf_token %}
+                <input type="submit" value="Login">
+            </form>
+        </div>
+
+    </div>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/signuplogin.css' %}">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div id="navdiv">
+            <div id="title">
+                <span>TravelPoint.</span>
+            </div>
+    
+            <div id="navbar">
+                <nav style="margin-top: 4%;">
+                    <a href="/home">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/offers">Offers</a>
+                    <a href="/news">Package</a>
+                    <a href="/contact">Contact</a>
+                </nav>
+            </div>
+    
+            <div id="account">
+                <a href="/signup"><button>Signup</button></a>
+                <a href="/login"><button>Login</button></a>
+            </div>
+        </div>
+
+    </div>
+    {% block body_block %}
+    {% endblock %}
+
+</body>
+</html>
